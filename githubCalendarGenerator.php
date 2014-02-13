@@ -8,15 +8,16 @@ $json = json_decode(file_get_contents("http://github.com/users/" . $username . "
 <style>
     .calCont {
         float: left;
+        width: 100%;
     }
     .calCol {
         float: left;
-        width: 14px;
+        width: 13px;
     }
     
     .calBox {
         margin: 1px;
-        width: 12px;
+        width: 11px;
         height: 12px;
     }
 </style>
