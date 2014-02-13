@@ -1,6 +1,6 @@
 <?php
 
-$username = "thenaterhood";
+$username = "gh123man";
 
 $json = json_decode(file_get_contents("http://github.com/users/" . $username . "/contributions_calendar_data"));
 
@@ -31,11 +31,11 @@ foreach ($json as $element) {
     }
 }
 
-function calculateColorValue($base, $weekDayCountn, $mult, $cap, $bound) {
+function calculateColorValue($base, $weekDayCount, $mult, $cap, $bound) {
 
-    if ($weekDayCountn != 0) {
+    if ($weekDayCount != 0) {
         
-        $val = $base - round($base * $mult * (1 / (round($bound / $weekDayCountn) ) ));
+        $val = $base - round($base * $mult * (1 / (round($bound / $weekDayCount) ) ));
         
         return base_convert(($val > $cap ? $cap : $val), 10, 16);
     } else {
