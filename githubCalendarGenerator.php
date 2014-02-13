@@ -7,7 +7,6 @@ $json = json_decode(file_get_contents("http://github.com/users/" . $username . "
 ?>
 <style>
     .calCont {
-        border: solid 1px;
         float: left;
     }
     .calCol {
@@ -21,7 +20,6 @@ $json = json_decode(file_get_contents("http://github.com/users/" . $username . "
         height: 12px;
     }
 </style>
-
 <?
 
 $largestCommitCount = 0;
@@ -34,8 +32,8 @@ foreach ($json as $element) {
 function calculateColorValue($base, $weekDayCount, $mult, $cap, $bound) {
 
     if ($weekDayCount != 0) {
-        
-        $val = $base - round($base * $mult * (1 / (round($bound / $weekDayCount) ) ));
+    
+        $val = $base - round($base * $mult * (floor((1 / ($bound / $weekDayCount)) * 10) / 10) );
         
         return base_convert(($val > $cap ? $cap : $val), 10, 16);
     } else {
@@ -96,7 +94,5 @@ foreach ($json as $element) {
 
 echo '</div>';
 echo '</div>';
-
-
 
 ?>
