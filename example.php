@@ -1,4 +1,4 @@
-<?php include "githubCalendarGenerator.php"; ?>
+<?php include "GithubCalendarGenerator.php"; ?>
 
 <html>
     <head>
@@ -14,7 +14,7 @@
         <h1>GitHub Calendar</h1>
 <?php 
 
-    $cal = new githubCalendarGenerator("gh123man");
+    $cal = new GithubCalendarGenerator("gh123man");
     echo $cal;
 
 ?>
