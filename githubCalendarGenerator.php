@@ -1,6 +1,6 @@
 <?php
 
-$username = "gh123man";
+$username = "manticorp";
 
 $json = json_decode(file_get_contents("http://github.com/users/" . $username . "/contributions_calendar_data"));
 
@@ -16,9 +16,9 @@ $json = json_decode(file_get_contents("http://github.com/users/" . $username . "
     }
     
     .calBox {
-        margin: 1px;
+        margin: 2px;
         width: 11px;
-        height: 12px;
+        height: 11px;
     }
 </style>
 <?
