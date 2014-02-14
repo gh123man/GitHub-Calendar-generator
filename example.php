@@ -14,7 +14,7 @@
         <h1>GitHub Calendar</h1>
 <?php 
 
-    $cal = new githubCalendarGenerator("manticorp");
+    $cal = new githubCalendarGenerator("gh123man");
     echo $cal;
 
 ?>
