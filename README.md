@@ -6,8 +6,8 @@ Builds your github commit calendar in HTML for use on any website
 Usage 
 -----
     <?php 
-        include "githubCalendarGenerator.php"; 
-        $cal = new githubCalendarGenerator("gh123man");
+        include "GithubCalendarGenerator.php"; 
+        $cal = new GithubCalendarGenerator("gh123man");
         echo $cal;
     ?>
 or see example.php

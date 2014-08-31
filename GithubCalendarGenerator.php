@@ -15,7 +15,7 @@ class GithubCalendarGenerator {
     const TILE_BG = '#EEE';
     
     public $username;
-    private $url = "http://github.com/users/%USERNAME%/contributions_calendar_data";
+    private $url = "http://github.com/users/%USERNAME%/contributions";
     private $data;
     private $largestCommitCount;
     
