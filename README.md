@@ -1,6 +1,12 @@
 GitHub Calendar Generator
 ===================================
 
+
+It is a sad day! - GitHub has begun rendering the calender svg server side at the following address: https://github.com/users/gh123man/contributions
+====================================================================================================================================================
+The usefulness of this script is purely for educational purposes now as it serves no purpose. 
+---------------------------------------------------------------------------------------------
+
 Builds your github commit calendar in HTML for use on any website
 
 Usage 
